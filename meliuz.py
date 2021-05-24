@@ -5,6 +5,7 @@ import datetime
 import matplotlib.pyplot as plt
 import nltk
 nltk.download('punkt')
+nltk.download('wordnet')
 from wordcloud import WordCloud, STOPWORDS
 import base64
 from sklearn.feature_extraction.text import CountVectorizer
