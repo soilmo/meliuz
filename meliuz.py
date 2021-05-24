@@ -4,6 +4,7 @@ import time
 import datetime
 import matplotlib.pyplot as plt
 import nltk
+nltk.download('punkt')
 from wordcloud import WordCloud, STOPWORDS
 import base64
 from sklearn.feature_extraction.text import CountVectorizer
