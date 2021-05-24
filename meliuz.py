@@ -214,11 +214,11 @@ dict_categorias = {
 # Textual
 st.header("Análise textual")
 # Escolher segmento
-categoria = st.selectbox("Qual categoria quer olhar?", options = ['Título da Avaliação','Prós','Contras','Conselhos a Presidência'])
+categoria = st.selectbox("Qual categoria quer olhar?", options = ['','Título da Avaliação','Prós','Contras','Conselhos a Presidência'])
 
 df_filtrado =df_dt
 
-if df_filtrado.shape[0]>0:
+if categoria != '':
     
     with st.beta_expander("Montar análises de um termos"):
     
